@@ -1,0 +1,27 @@
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  margin: 100px auto;
+}
+
+.auth-container input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.auth-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+.auth-container p {
+  cursor: pointer;
+  color: #3b82f6;
+}

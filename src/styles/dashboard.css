@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔹 Container principal */
+.dashboard {
+  flex: 1;
+  padding: 25px;
+  background: #0f172a;
+  color: white;
+  overflow-y: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* 🔹 Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color:#3258b1;
+}
+
+/* 🔹 Botão logout */
+.logout-btn {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* 🔥 Hover bonito */
+.logout-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 🔹 Form */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.task-input button {
+  padding: 10px 15px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔹 Lista */
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.task-card {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: #1e293b;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #334155;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stats p {
+  background: #1e293b;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* 🔹 Layout principal */
+.layout {
+  display: flex;
+  min-height: 100vh; 
+}
+
+/* 🔹 Sidebar */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #020617, #0f172a);
+  padding: 25px;
+  flex-shrink: 0;
+  border-right: 1px solid #1e293b;
+}
+
+
+/* Logo */
+.sidebar h2 {
+  margin-bottom: 40px;
+  color: #3b82f6;
+  font-size: 22px;
+}
+
+/* Menu */
+.sidebar nav p {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: #94a3b8;
+  transition: all 0.2s;
+}
+
+.sidebar nav p:hover {
+  color: white;
+}
+
+/* Hover */
+.sidebar nav p:hover {
+  background: #1e293b;
+  color: white;
+}
+
+/* Ativo */
+.sidebar nav p.active {
+  background: #3b82f6;
+  color: white;
+}
