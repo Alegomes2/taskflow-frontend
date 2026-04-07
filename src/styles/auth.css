@@ -21,7 +21,16 @@
   cursor: pointer;
 }
 
+
+
 .auth-container p {
   cursor: pointer;
   color: #3b82f6;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    width: 90%;
+    margin: 50px auto;
+  }
 }

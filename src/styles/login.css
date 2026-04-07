@@ -41,3 +41,10 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .auth-container {
+    width: 90%;
+    margin: 50px auto;
+  }
+}
